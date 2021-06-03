@@ -14,7 +14,7 @@
                 @foreach ($books as $book)
                    <li>
                     {{ $book -> title }} - 
-                    <a href="">
+                    <a href="{{ route('show_author', $book -> author -> id) }}">
                         {{ $book -> author -> firstname }} {{ $book -> author -> lastname }}
                     </a>
                    </li>
